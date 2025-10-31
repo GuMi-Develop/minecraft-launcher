@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minecraft launcher</title>
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="stylesheet" href="src/index.css" />
+  </head>
+  <body>
+    <main>
+      <section class="menu">
+        <img src="img/logo.png" alt="logo" class="logo" />
+        <div class="navigation-menu">
+          <button class="profile">
+            <img src="img/Group 4.svg" alt="profile" />
+          </button>
+          <div class="other-btn">
+            <button><img src="img/start.svg" alt="start" /></button>
+            <button><img src="img/options.svg" alt="options" /></button>
+          </div>
+        </div>
+      </section>
+      <section class="main-page">
+        <div class="authorisation">
+          <div class="auth-box">
+            <div class="auth-title">
+              <span class="auth">АВТОРИЗАЦИЯ</span>
+              <span class="auth-description">Для лицензионного Minecraft</span>
+            </div>
+            <div class="login">
+              <span class="login-title">ЛОГИН</span>
+              <input
+                oninput="showText()"
+                id="login"
+                class="login-input"
+                placeholder="Введите логин.."
+                type="text"
+              />
+            </div>
+            <div class="password">
+              <span class="password-title">ПАРОЛЬ</span>
+              <input
+                class="password-input"
+                placeholder="Введите пароль.."
+                type="password"
+              />
+            </div>
+            <button id="btn">У меня нет лицензии</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      function showText() {
+        const login = document.getElementById("login");
+        console.log(login.value);
+      }
+    </script>
+  </body>
+</html>
