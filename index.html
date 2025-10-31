@@ -30,7 +30,7 @@
             <div class="login">
               <span class="login-title">ЛОГИН</span>
               <input
-                oninput="showText()"
+                oninput="login()"
                 id="login"
                 class="login-input"
                 placeholder="Введите логин.."
@@ -46,15 +46,11 @@
               />
             </div>
             <button id="btn">У меня нет лицензии</button>
+            <button id="login-btn">Войти</button>
           </div>
         </div>
       </section>
     </main>
-    <script>
-      function showText() {
-        const login = document.getElementById("login");
-        console.log(login.value);
-      }
-    </script>
+    <script src="src/script.js"></script>
   </body>
 </html>

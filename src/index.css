@@ -109,6 +109,7 @@ section {
 
 .auth-box {
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding: 55px 50px;
   width: 526px;
@@ -127,18 +128,11 @@ section {
   flex-direction: column;
 }
 
-.login {
-  margin-top: 47px;
-}
-
-.password {
-  margin-top: 27px;
-}
-
 .login,
 .password {
   align-items: start;
   gap: 9px;
+  margin-top: 27px;
 }
 
 .auth,
@@ -186,8 +180,35 @@ section {
   text-align: center;
   background: none;
   border: none;
+  transition: all 5s;
 }
 
 .auth-box button:hover {
   cursor: pointer;
+}
+
+#login-btn {
+  display: none;
+  text-decoration: none;
+  color: var(--main-color);
+  background-color: var(--btn-background);
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  border: var(--main-color) solid 2px;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
 }
